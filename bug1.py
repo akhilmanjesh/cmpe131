@@ -17,7 +17,8 @@ class Circle(Base):
         
     def draw(self):
         return f'''
-({self.x}, {self.y}) {self.size}
+({self.x}, {self.y})
+{self.size}
          , - ~ ~ ~ - ,
      , '               ' ,
    ,                       ,
@@ -44,8 +45,9 @@ class Square(Base):
 '''
 
 def main():
-    s = Square(1, 2, 3)
-    print(s.shape())
-    print(s.draw())
+    c = Circle(2, 2, 1)
+    print(c.shape())
+    print(c.draw())
 
-main()
+if __name__ == "__main__":
+    main()
