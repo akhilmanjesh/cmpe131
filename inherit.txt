@@ -1,0 +1,3 @@
+1) With inheritance you can reuse code which allows you to write less code and call the function or idea multiple times without having to rewrite it every time.
+
+2) It also allows for polymorphism which is generalized code that adapts to how you want to use it. For example in websites you want to define common components that occur among pages like the navbar and only pass the props you want to alter or render differently in the parameters.

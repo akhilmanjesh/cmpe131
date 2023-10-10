@@ -1,0 +1,11 @@
+
+1. Does the change inside increment_int_a change the variable a after the function call?
+No, the change does not affect a after the function call. 
+
+2. Does the change inside increment_int_b change the variable b after the function call?
+Yes, the change does change b after the function call. It gets incremented to 1
+
+3. If they differ answer why? if not why not?
+They change because of the way python handles immutable and mutable types
+increment_int_a doesnt change because it is passed as an immutable variable and it doesnt change the original 
+increment_int_b changes because it is a mutable and thus editable variable thus changing the original
