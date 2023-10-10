@@ -1,4 +1,7 @@
 def my_steps(n):
+    if n < 1 or n > 25:
+        raise ValueError("not within range")
+    
     if n == 1:
         return 1
     elif n == 2:
@@ -10,4 +13,3 @@ def my_steps(n):
         ways[i] = ways[i-1] + ways[i-2]
     
     return ways[n]
-
