@@ -1,4 +1,3 @@
-
 class Base:
     def __init__(self, x, y, size):
         self.x = x
@@ -13,7 +12,7 @@ class Circle(Base):
         super().__init__(x, y, size)
 
     def shape(self):
-        return "This is a circle"
+        return f"This is a circle\n{self.draw()}"
         
     def draw(self):
         return f'''
@@ -29,8 +28,7 @@ class Circle(Base):
   ,                         ,
    ,                       ,
      ,                  , '
-       ' - , _ _ _ ,  '
-'''
+       ' - , _ _ _ ,  '''  
 
 class Square(Base):
     def shape(self):
@@ -47,7 +45,5 @@ class Square(Base):
 def main():
     c = Circle(2, 2, 1)
     print(c.shape())
-    print(c.draw())
 
-if __name__ == "__main__":
-    main()
+main()
